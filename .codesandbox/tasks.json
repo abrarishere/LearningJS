@@ -3,5 +3,10 @@
   "setupTasks": [],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
-  "tasks": {}
+  "tasks": {
+    "CSB_RUN_OUTSIDE_CONTAINER=1 devcontainer templates apply --template-id \"ghcr.io/devcontainers/templates/typescript-node\" --template-args '{}' --features '[{\"id\":\"ghcr.io/devcontainers/features/python\",\"options\":{\"version\":\"os-provided\",\"installTools\":\"true\",\"toolsToInstall\":\"flake8,autopep8,black,yapf,mypy,pydocstyle,pycodestyle,bandit,pipenv,virtualenv,pytest,pylint\",\"optimize\":\"false\",\"enableShared\":\"false\",\"installPath\":\"/usr/local/python\",\"installJupyterlab\":\"false\",\"configureJupyterlabAllowOrigin\":\"\",\"httpProxy\":\"\"}}]'": {
+      "name": "Environment setup",
+      "command": "CSB_RUN_OUTSIDE_CONTAINER=1 devcontainer templates apply --template-id \"ghcr.io/devcontainers/templates/typescript-node\" --template-args '{}' --features '[{\"id\":\"ghcr.io/devcontainers/features/python\",\"options\":{\"version\":\"os-provided\",\"installTools\":\"true\",\"toolsToInstall\":\"flake8,autopep8,black,yapf,mypy,pydocstyle,pycodestyle,bandit,pipenv,virtualenv,pytest,pylint\",\"optimize\":\"false\",\"enableShared\":\"false\",\"installPath\":\"/usr/local/python\",\"installJupyterlab\":\"false\",\"configureJupyterlabAllowOrigin\":\"\",\"httpProxy\":\"\"}}]'"
+    }
+  }
 }

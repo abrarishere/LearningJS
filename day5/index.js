@@ -1,2 +1,4 @@
-// JavaScript code for Day {day}
-alert("Hello from Day {day}!");
+let age = window.prompt("How old are you");
+age = Number(age);
+age += 1;
+console.log(age);
