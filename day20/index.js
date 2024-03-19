@@ -1,2 +1,5 @@
-// JavaScript code for Day {day}
-alert("Hello from Day {day}!");
+let userName;
+do {
+    userName = window.prompt("Enter your name");
+} while (userName == "");
+console.log("Hello " + userName)
